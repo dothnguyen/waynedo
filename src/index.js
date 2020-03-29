@@ -1,4 +1,4 @@
-// For deploying on azure
+// For deploying on azure - update for redeploy
 // Imports
 var express = require("express");
 var path = require("path");
