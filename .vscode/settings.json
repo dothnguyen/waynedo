@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/9e939c7e-b384-4baf-87f2-6754700ee379/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/waynedo",
+    "appService.deploySubpath": "dist\\waynedo"
+}
