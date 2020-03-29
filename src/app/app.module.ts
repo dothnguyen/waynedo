@@ -6,6 +6,8 @@ import { HeaderComponent } from './header/header.component';
 import { SociallinklistComponent } from './sociallinklist/sociallinklist.component';
 import { SociallinkComponent } from './sociallink/sociallink.component';
 import { SectiontitleComponent } from './sectiontitle/sectiontitle.component';
+import { CareersummaryComponent } from './careersummary/careersummary.component';
+import { ExperienceentryComponent } from './experienceentry/experienceentry.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { SectiontitleComponent } from './sectiontitle/sectiontitle.component';
     HeaderComponent,
     SociallinklistComponent,
     SociallinkComponent,
-    SectiontitleComponent
+    SectiontitleComponent,
+    CareersummaryComponent,
+    ExperienceentryComponent
   ],
   imports: [
     BrowserModule
