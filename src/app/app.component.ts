@@ -1,5 +1,10 @@
 import { Component } from "@angular/core";
-import { Profile, CareerSummary, WorkExperience } from "./model/profile";
+import {
+	Profile,
+	CareerSummary,
+	WorkExperience,
+	SkillList
+} from "./model/profile";
 
 @Component({
 	selector: "app-root",
@@ -12,6 +17,8 @@ export class AppComponent {
 	profile: Profile;
 	careerSummany: CareerSummary;
 	experiences: Array<WorkExperience>;
+
+	skills: Array<SkillList>;
 
 	constructor() {
 		this.profile = {
@@ -151,6 +158,73 @@ export class AppComponent {
 				"VB.NET",
 				"HTML",
 				"Javascript"
+			]
+		});
+
+		this.skills = new Array();
+		this.skills.push({
+			name: "Languages",
+			skills: [
+				{
+					skillName: "Java",
+					level: 98
+				},
+				{
+					skillName: "C#",
+					level: 93
+				},
+				{
+					skillName: "Javascript",
+					level: 95
+				},
+				{
+					skillName: "Typescript",
+					level: 85
+				},
+				{
+					skillName: "SQL",
+					level: 90
+				}
+			]
+		});
+
+		this.skills.push({
+			name: "Frontend",
+			skills: [
+				{
+					skillName: "HTML",
+					level: 98
+				},
+				{
+					skillName: "CSS",
+					level: 93
+				},
+				{
+					skillName: "Angular",
+					level: 80
+				},
+				{
+					skillName: "BackboneJs",
+					level: 85
+				}
+			]
+		});
+
+		this.skills.push({
+			name: "Backend",
+			skills: [
+				{
+					skillName: ".Net Framework",
+					level: 90
+				},
+				{
+					skillName: ".Net Core",
+					level: 80
+				},
+				{
+					skillName: "SpringBoot",
+					level: 80
+				}
 			]
 		});
 	}

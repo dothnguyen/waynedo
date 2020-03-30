@@ -29,3 +29,13 @@ export interface SocialLink {
 	url: string;
 	faIconClass: string;
 }
+
+export interface Skill {
+	skillName: string;
+	level: number;
+}
+
+export interface SkillList {
+	name: string;
+	skills: Array<Skill>;
+}
