@@ -5,9 +5,15 @@
 				{{ experience.title }}
 			</h3>
 			<div class="resume-company-name ml-auto">
-				<a href="{{ experience.companyUrl }}">{{
+				<a
+					*ngIf="experience.companyUrl"
+					href="{{ experience.companyUrl }}"
+					target="_blank"
+					>{{ experience.companyName }}</a
+				>
+				<ng-container *ngIf="!experience.companyUrl">{{
 					experience.companyName
-				}}</a>
+				}}</ng-container>
 			</div>
 		</div>
 		<!--//row-->

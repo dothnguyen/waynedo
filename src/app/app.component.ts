@@ -52,7 +52,15 @@ export class AppComponent {
 			companyUrl: "https://www.qitplus.com",
 			roleDesc:
 				"Fullstack software developer, developing Incident Management System that helps different local councils and organizations to manage operational location-based incidents in times of events such as Storms and Cyclons, Bushfires, Flood, etc with the ability to record requests/incidents; assign tasks to internal staff or external contacts; broadcast information to different parties; gather information via dynamic forms, etc. The system is developed using .NET Framework at the backend and BackboneJs in the front end.",
-			achivements: ""
+			achivements: "",
+			technologies: [
+				"C#",
+				".NET Framework",
+				"Entity Framework",
+				"SQL Server",
+				"Backbonejs",
+				"jquery"
+			]
 		});
 
 		this.experiences.push({
@@ -66,18 +74,19 @@ export class AppComponent {
         - E-Business Technology (PHP, Javascript, CSS)<br/>
         - Enterprise database system with Oracle (Oracle server, PL/SQL, Trigger, Procedure)<br/>
         - Advanced mobile technology (Android Application)`,
-			achivements: ""
+			achivements: "",
+			technologies: ["Oracle", "HTML5", "CSS", "Android SDK", "Python"]
 		});
 
-		this.experiences.push({
-			title: "Intern Software Developer",
-			companyName: "Nuance Communications",
-			yearFrom: "2017",
-			yearTo: "2017",
-			companyUrl: "https://www.nuance.com/",
-			roleDesc: `Developed data processing system that reads data from CSV files, sends to Kafka server from which the data will be streamed by Apache Spark, and be aggregated using Spark Structured Streaming API. Finally the aggregated data is sent to the Wallboard system to display on multiple screens.`,
-			achivements: ""
-		});
+		// this.experiences.push({
+		// 	title: "Intern Software Developer",
+		// 	companyName: "Nuance Communications",
+		// 	yearFrom: "2017",
+		// 	yearTo: "2017",
+		// 	companyUrl: "https://www.nuance.com/",
+		// 	roleDesc: `Developed data processing system that reads data from CSV files, sends to Kafka server from which the data will be streamed by Apache Spark, and be aggregated using Spark Structured Streaming API. Finally the aggregated data is sent to the Wallboard system to display on multiple screens.`,
+		// 	achivements: ""
+		// });
 
 		this.experiences.push({
 			title: "Mobile Application Developer, Freelancer",
@@ -86,7 +95,14 @@ export class AppComponent {
 			yearTo: "2015",
 			companyUrl: "https://apkfab.com/developer/tndev",
 			roleDesc: `Developed Android and iOS applications and games.`,
-			achivements: ""
+			achivements: "",
+			technologies: [
+				"Java",
+				"Kotlin",
+				"Android SDK",
+				"Google AppEngine",
+				"LibGdx"
+			]
 		});
 
 		this.experiences.push({
@@ -96,7 +112,8 @@ export class AppComponent {
 			yearTo: "2013",
 			companyUrl: "",
 			roleDesc: `Developed a central configuration system for an “E-Health” server, which is a network management system for Actions Results LCC based in the United States. The system is a web-based application and was written using Spring, Hibernate and GWT.`,
-			achivements: ""
+			achivements: "",
+			technologies: ["Java", "Spring", "GWT", "HTML", "CSS"]
 		});
 
 		this.experiences.push({
@@ -106,7 +123,8 @@ export class AppComponent {
 			yearTo: "2009",
 			companyUrl: "https://www.enecom.co.jp/",
 			roleDesc: `Participating in building a new framework using Java, Struts, JSP.`,
-			achivements: ""
+			achivements: "",
+			technologies: ["Java", "Struts", "HTML", "CSS"]
 		});
 
 		this.experiences.push({
@@ -123,7 +141,17 @@ export class AppComponent {
       - A plugin to manage trip fee for POWEREGG v2.0.<br/>
       - Developed internal appointment/dismissal management system for Energia Communications.<br/>
       - Developed several production and sale management systems for Japanese customers (Mitani Sangyo, Houken) using ASP.NET with VB.NET and Oracle database.`,
-			achivements: ""
+			achivements: "",
+			technologies: [
+				"Java",
+				"Struts",
+				"EJB",
+				"Hibernate",
+				"JPA",
+				"VB.NET",
+				"HTML",
+				"Javascript"
+			]
 		});
 	}
 }
