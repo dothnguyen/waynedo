@@ -3,13 +3,13 @@ import {
 	Profile,
 	CareerSummary,
 	WorkExperience,
-	SkillList
+	SkillList,
 } from "./model/profile";
 
 @Component({
 	selector: "app-root",
 	templateUrl: "./app.component.html",
-	styles: []
+	styles: [],
 })
 export class AppComponent {
 	title = "waynedo";
@@ -32,20 +32,20 @@ export class AppComponent {
 				{
 					link: "linkedin.com/in/dothnguyen",
 					faIconClass: "fa-linkedin-in",
-					url: "www.linkedin.com/in/dothnguyen"
+					url: "www.linkedin.com/in/dothnguyen",
 				},
 				{
 					link: "github.com/dothnguyen",
 					faIconClass: "fa-github-alt",
-					url: "https://github.com/dothnguyen"
-				}
-			]
+					url: "https://github.com/dothnguyen",
+				},
+			],
 		};
 
 		this.careerSummany = {
 			title: "Career Summary",
 			summary:
-				"An experienced software developer with over nine years working with various programming languages and technologies, such as Java (with EJB Hibernate, JPA, Spring), Web development (with HTML, CSS, JavaScript, Backbonejs, Angular), .NET (ASP.NET MVC, EntityFramework), Android development, and SQL; with special interest in new and emerging technologies. Professional, able to work autonomously and within a team environment to a high standard in a dynamic and changing industry; outcomes-focused with an attention to detail, quality and innovation."
+				"An experienced software developer with over nine years working with various programming languages and technologies, such as .NET and .NET Core (ASP.NET MVC, EntityFramework), Web development (with HTML, CSS, JavaScript, JQuery, Backbonejs, Angular) and SQL; with special interest in new and emerging technologies. Professional, able to work autonomously and within a team environment to a high standard in a dynamic and changing industry; outcomes-focused with an attention to detail, quality and innovation. Excellent problem-solving skills.",
 		};
 
 		// work experiences
@@ -53,9 +53,28 @@ export class AppComponent {
 
 		this.experiences.push({
 			title: "Software Developer",
-			companyName: "QIT Plus Pty Ltd",
-			yearFrom: "2017",
+			companyName: "Commerce Vision",
+			yearFrom: "2021",
 			yearTo: "Present",
+			companyUrl: "https://www.commercevision.com.au/",
+			roleDesc:
+				"Full-stack software developer, fixing issues nd adding new features to the company e-commerce platform (CSS - Customer Self Service); using .NET 4.7 with ASP.NET MVC at the backend and Kendo UI, JQuery in the frontend; also work as dev-support who investigates issues reported by customers, identifies the causes and suggests a solution to fix.",
+			achivements: "",
+			technologies: [
+				"C#",
+				".NET Framework",
+				"Entity Framework",
+				"SQL Server",
+				"Kendo UI",
+				"jQuery",
+			],
+		});
+
+		this.experiences.push({
+			title: "Software Developer",
+			companyName: "QIT Plus Pty Ltd",
+			yearFrom: "2018",
+			yearTo: "2021",
 			companyUrl: "https://www.qitplus.com",
 			roleDesc:
 				"Fullstack software developer, developing Incident Management System that helps different local councils and organizations to manage operational location-based incidents in times of events such as Storms and Cyclons, Bushfires, Flood, etc with the ability to record requests/incidents; assign tasks to internal staff or external contacts; broadcast information to different parties; gather information via dynamic forms, etc. The system is developed using .NET Framework at the backend and BackboneJs in the front end.",
@@ -66,8 +85,8 @@ export class AppComponent {
 				"Entity Framework",
 				"SQL Server",
 				"Backbonejs",
-				"jquery"
-			]
+				"jQuery",
+			],
 		});
 
 		this.experiences.push({
@@ -82,18 +101,8 @@ export class AppComponent {
         - Enterprise database system with Oracle (Oracle server, PL/SQL, Trigger, Procedure)<br/>
         - Advanced mobile technology (Android Application)`,
 			achivements: "",
-			technologies: ["Oracle", "HTML5", "CSS", "Android SDK", "Python"]
+			technologies: ["Oracle", "HTML5", "CSS", "Android SDK", "Python"],
 		});
-
-		// this.experiences.push({
-		// 	title: "Intern Software Developer",
-		// 	companyName: "Nuance Communications",
-		// 	yearFrom: "2017",
-		// 	yearTo: "2017",
-		// 	companyUrl: "https://www.nuance.com/",
-		// 	roleDesc: `Developed data processing system that reads data from CSV files, sends to Kafka server from which the data will be streamed by Apache Spark, and be aggregated using Spark Structured Streaming API. Finally the aggregated data is sent to the Wallboard system to display on multiple screens.`,
-		// 	achivements: ""
-		// });
 
 		this.experiences.push({
 			title: "Mobile Application Developer, Freelancer",
@@ -108,8 +117,8 @@ export class AppComponent {
 				"Kotlin",
 				"Android SDK",
 				"Google AppEngine",
-				"LibGdx"
-			]
+				"LibGdx",
+			],
 		});
 
 		this.experiences.push({
@@ -120,7 +129,7 @@ export class AppComponent {
 			companyUrl: "",
 			roleDesc: `Developed a central configuration system for an “E-Health” server, which is a network management system for Actions Results LCC based in the United States. The system is a web-based application and was written using Spring, Hibernate and GWT.`,
 			achivements: "",
-			technologies: ["Java", "Spring", "GWT", "HTML", "CSS"]
+			technologies: ["Java", "Spring", "GWT", "HTML", "CSS"],
 		});
 
 		this.experiences.push({
@@ -131,7 +140,7 @@ export class AppComponent {
 			companyUrl: "https://www.enecom.co.jp/",
 			roleDesc: `Participating in building a new framework using Java, Struts, JSP.`,
 			achivements: "",
-			technologies: ["Java", "Struts", "HTML", "CSS"]
+			technologies: ["Java", "Struts", "HTML", "CSS"],
 		});
 
 		this.experiences.push({
@@ -157,8 +166,8 @@ export class AppComponent {
 				"JPA",
 				"VB.NET",
 				"HTML",
-				"Javascript"
-			]
+				"Javascript",
+			],
 		});
 
 		this.skills = new Array();
@@ -166,26 +175,26 @@ export class AppComponent {
 			name: "Languages",
 			skills: [
 				{
-					skillName: "Java",
-					level: 98
+					skillName: "C#",
+					level: 98,
 				},
 				{
-					skillName: "C#",
-					level: 93
+					skillName: "Java",
+					level: 98,
 				},
 				{
 					skillName: "Javascript",
-					level: 95
+					level: 95,
 				},
 				{
 					skillName: "Typescript",
-					level: 85
+					level: 85,
 				},
 				{
 					skillName: "SQL",
-					level: 90
-				}
-			]
+					level: 90,
+				},
+			],
 		});
 
 		this.skills.push({
@@ -193,21 +202,21 @@ export class AppComponent {
 			skills: [
 				{
 					skillName: "HTML",
-					level: 98
+					level: 98,
 				},
 				{
 					skillName: "CSS",
-					level: 93
+					level: 93,
 				},
 				{
 					skillName: "Angular",
-					level: 80
+					level: 90,
 				},
 				{
-					skillName: "BackboneJs",
-					level: 85
-				}
-			]
+					skillName: "React",
+					level: 60,
+				},
+			],
 		});
 
 		this.skills.push({
@@ -215,17 +224,17 @@ export class AppComponent {
 			skills: [
 				{
 					skillName: ".Net Framework",
-					level: 90
+					level: 90,
 				},
 				{
 					skillName: ".Net Core",
-					level: 80
+					level: 80,
 				},
 				{
 					skillName: "SpringBoot",
-					level: 80
-				}
-			]
+					level: 70,
+				},
+			],
 		});
 	}
 }
